@@ -1,4 +1,5 @@
 # Curso-Full-Stack-Python
+#### EBAC
 
 #GIT
 ## Conceitos de versionamento
@@ -28,6 +29,8 @@ git clone https://github.com/gustavoagoncalves/Curso-Full-Stack-Python
 ##Commits
 Informação de alteração
 - após testar todo o seu código
+- git add
+- git commit -m 'mensagem qualquer' 
 
 ##GITFlow
 Fluxo do GIT
