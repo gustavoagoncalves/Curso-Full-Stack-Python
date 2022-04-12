@@ -1,0 +1,43 @@
+
+
+table {
+
+	border: 3px solid;
+	border-collapse: collapse;
+	background: #ffffff;
+	width: 100%;
+
+}
+
+tbody td {
+	border: 3px solid;
+}
+
+table th,
+table td {
+	padding: 1rem;
+	font-size: 1.6rem;
+	text-align: left;
+	vertical-align: middle;
+}
+
+table tr td:first-child {
+	text-align: left;
+	font-weight: bold;
+}
+
+table th {
+	background-color: #250ad1;
+
+}
+
+.table-container h3 {
+}
+
+.table-container tfoot {
+	background: #250ad1;
+}
+
+.table-container tfoot td {
+	font-weight: bold;
+}

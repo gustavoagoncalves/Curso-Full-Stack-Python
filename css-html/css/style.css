@@ -1,0 +1,108 @@
+/*Arquivo CSS geral com o estilo de todas as páginas*/
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: times, sans-serif;
+	background-color: #dcdcdc;
+}
+
+/* Style the header */
+header {
+	padding: 30px;
+	text-align: center;
+	font-size: 1.8rem;	
+}
+
+h2 + p {
+	font-family: 'BIZ UDMincho', serif;
+	font-size: 1.5rem;
+	font-weight: 400;
+}
+
+a {
+	font-family: arial;
+	text-decoration: none;
+	width: 100%;	
+}
+
+a:visited {
+	color: rgb(255, 255, 255);
+}
+
+.navegacao {
+	background-color: rgba(0, 0, 0, .70);
+	padding: .5rem;
+}
+
+body {
+	background: url(./images/matrix.png.);
+}
+
+header h2 {
+	color: white;
+}
+
+h3 {
+	color: #ffffff;
+}
+
+div img {
+	width: 100%;
+}
+/* Create two columns/boxes that floats next to each other */
+nav {
+	float: right;
+	width: 30%;
+	text-align: center;	
+	padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+	list-style-type: none;
+	padding: 0;
+	margin-bottom: 42px;
+}
+
+article {
+	text-align: center;
+	align-content: center;
+	float: left;
+	padding: 20px;
+	width: 70%;
+	color: #ffffff;
+}
+
+
+/* Clear floats after the columns */
+section::after {
+	background: #ccc;
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/* Style the footer */
+footer {
+	padding: 10px;
+	text-align: center;
+	color: white;
+}
+
+form div {
+	position: static;	
+
+}
+
+@media (max-width: 428px) {
+	nav,
+	section,
+	article {
+		width: 100%;
+		min-width: auto;
+	}
+
+}

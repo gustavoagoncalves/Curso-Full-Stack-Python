@@ -23,6 +23,7 @@ https://git-scm.com/
 ##Criando conta no GITHub
 
 ##Clonar o Projeto
+git clone https://github.com/gustavoagoncalves/Curso-Full-Stack-Python
 
 ##Commits
 Informação de alteração

@@ -1,0 +1,70 @@
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    height: 100vh; /*viewport height*/
+    background-color: #efefef;
+    overflow: auto;
+}
+
+h1, h2, p {
+    margin-bottom: 20px;    
+}
+
+div {
+    padding: 20px 0;
+    margin: 0;
+}
+
+.width-100 {
+    width: 100%;
+    width: 100vw; /*viewport width*/
+    background-color: aqua;
+    padding: 20px 0;
+    height: 400px;
+    
+}
+
+nav {
+    width: 20%;
+    float: left;
+    background-color: gray;
+    display: table;
+    display: block;
+    height: 100%;
+}
+
+article {
+    width: 80%;
+    float: left;
+    background-color: ivory;    
+    box-sizing: border-box;/*considera o padding e border na altura e largura*/
+}
+
+.fixed-width {
+    width: 200px;
+    background-color: lawngreen;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.background {
+    background-color: lightcoral;
+    background-image: url(../css/images/pattern.png);
+    background-repeat: repeat-y; /*repetir vertical*/
+    background-repeat: repeat-x; /*repetir horizontal*/
+    width: 100%;
+    height: 50vh;
+}
+
+div img {
+    width: 100%;
+}
