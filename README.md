@@ -36,3 +36,10 @@ Informação de alteração
 
 ##GITFlow
 Fluxo do GIT
+
+### Branchs
+São ramificações do código / versões paralelas
+
+- main / master
+- develop
+- DOD (Definition of Done): critérios de aceite. Somente após todos os testes serem feitos a versão final é mandada para a branch main/master.
