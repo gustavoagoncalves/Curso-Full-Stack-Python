@@ -49,6 +49,7 @@ git checkout "nome da branch" (muda de branch)
 
 ### Merge
 Mescla de branchs
+develop
 Você pode precisar resolver conflitos manualmente
 git merge main
 
@@ -61,4 +62,3 @@ O repositório resolve os conflitos automaticamente
 ### Configurar o GitFlow
 git flow init
 git flow feature start {nome-da-feature}
-
