@@ -44,5 +44,21 @@ São ramificações do código / versões paralelas
 - develop
 - DOD (Definition of Done): critérios de aceite. Somente após todos os testes serem feitos a versão final é mandada para a branch main/master.
 
+git checkout -b (cria uma branch)
+git checkout "nome da branch" (muda de branch)
+
 ### Merge
 Mescla de branchs
+develop
+Você pode precisar resolver conflitos manualmente
+git merge main
+
+### Pull Requests
+Mescla de branchs no repositório
+Permite o code review: quando você envia o seu código para outros usuários/desenvolvedores
+O repositório resolve os conflitos automaticamente
+
+
+### Configurar o GitFlow
+git flow init
+git flow feature start {nome-da-feature}
