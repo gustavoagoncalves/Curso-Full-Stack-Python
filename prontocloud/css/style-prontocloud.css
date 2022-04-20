@@ -76,7 +76,8 @@ img {
 
 #tenho-interesse form, 
 .cognito.c-med .c-forms-form,
-.cognito.c-med .c-forms-form div {
+.cognito.c-med .c-forms-form div,
+.cognito .c-forms-form, .cognito.forms.model {
     background-color: #b8c8d6 !important;
 }
 
