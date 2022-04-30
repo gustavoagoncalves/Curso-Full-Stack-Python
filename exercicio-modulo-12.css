@@ -1,0 +1,18 @@
+input {
+    display: block;
+    margin: 5px;
+}
+
+p {
+    background-color: lightgray;
+    font-size: 1.6rem;
+}
+
+button {
+    margin: 5px;
+}
+
+footer p{
+    font-size: large;    
+    text-align: center;
+}
