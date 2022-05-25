@@ -74,3 +74,12 @@ html {
 </style>
 
 ```
+
+## Componentes
+- Blocos, modelos, templates reutilizáveis
+- https://getbootstrap.com/docs/5.1/components/
+
+## Helpers
+- Funções básicas
+- Incrementos
+- Ajustes
