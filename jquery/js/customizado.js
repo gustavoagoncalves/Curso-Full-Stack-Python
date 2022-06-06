@@ -45,5 +45,49 @@ $(document).ready(function(){
         alert('Produto Esgotado');
         
     })
+
+    /*
+    Callback
+    * entendendo ações que começam ao término de outra
+    */ 
+
+    $('.featured-item:nth(1)')
+        .hide(2000, function(){
+        //este é o callback
+        console.log($(this).find('h4').text() + 'esgotado') //esconde
+        })
+        .show(2000, function(){
+            console.log($(this).find('h4').text() + 'em estoque') //mostra
+        })
+
+    /*
+    * Animações
+    */
+
+    const duracao = 1000 // equivalente a 1 segundo
+
+    $('.featured-item:nth(0)')
+    .hide(duracao)
+    .show(duracao)
+    .fadeOut(duracao)
+    .fadeIn(duracao)
+    .toggle(duracao)
+    .toggle(duracao)
+
+    $('#form-submit').on('click', function(e){
+
+        e.preventDefault()
+        
+        if($('#email').val() != ''){
+            $('#email').animate({
+                opacity: "toggle",
+                top: "-50"
+            }, duracao, function(){
+                console.log($(this).val())
+            })
+        }
+
+    }); 
+
     
 });
