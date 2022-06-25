@@ -165,6 +165,7 @@ $(document).ready(function(){
         $('#phone').mask('00000-0000');
     })
     $('body').on('blur', '#cpf', function(){
+        const cpf = /^\d{3}\.\d{3}\.\d{3}\-\d{2}$/
         validate($(this))
         $(this).mask('000.000.000-00');
     })
