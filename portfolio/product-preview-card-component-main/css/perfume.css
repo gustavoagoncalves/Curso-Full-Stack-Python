@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    font-size: 62,5%;
+    background-color: hsl(30, 38%, 92%);
+}
+
+table {
+    border: 1px solid;
+    padding: 0;    
+}
+
+h1 {
+    font-size: xx-large;
+    font-weight: 700;
+}
+
+.titulo {
+    text-align: center;
+    padding-top: 17px;
+}
+
+p {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: hsl(228, 12%, 42%);
+}
+
+section {
+    background-color: hsl(0, 0%, 100%);
+
+}
+
+div img {
+    height: auto;
+    width: 40%;
+    float: left;
+    border-radius: 8px;
+}
+
+button {
+    background-color: hsl(158, 36%, 37%);
+    border-radius: 8px;
+    color: hsl(0, 0%, 100%);
+    padding: 15px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+button:visited {
+    color: hsl(158, 36%, 37%);
+}
+
+button:hover {
+    color: hsl(212, 21%, 14%);
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.coluna-1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: xx-large;
+    font-weight: 900;
+    color: hsl(158, 36%, 37%);
+}
+
+.coluna-2 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-decoration: line-through;
+    color: hsl(228, 12%, 42%);
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
