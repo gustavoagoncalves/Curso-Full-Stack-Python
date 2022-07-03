@@ -5,62 +5,42 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" type="text/css" href="./css/perfume.css">
+  <link rel="stylesheet" type="text/css" href="./css/styles.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fraunces|Montserrat">
   
   <title>Frontend Mentor | Product preview card component</title>
 </head>
 
 <body>
-  
-  
-  <article>
+  <div class="card">
+    <picture>
+      <source srcset="./images/image-product-desktop.jpg" media="(min-width: 610px)" >
+      <img class="foto" width="300" src="./images/image-product-mobile.jpg" alt="perfume"> 
+    </picture>
     
-    <div>
-      <picture>
-        
-        <source media="(max-width:375px)" srcset="./images/image-product-mobile.jpg">
-        <source media="(max-width:1440px)" srcset="./images/image-product-desktop.jpg">
-        <img src="./images/image-product-desktop.jpg" alt="perfume">
-        
-      </picture>
-    </div>
-    
-    <section>
-      
-      <p class="titulo">PERFUME</p>
-      
+
+    <div class="info-produto">
+      <span class="tipo-produto">PERFUME</span>
+
       <h1>Gabrielle Essence Eau De Parfum</h1>
-      
+
       <p>
         A floral, solar and voluptuous interpretation composed by Olivier Polge, 
         Perfumer-Creator for the House of CHANEL.
       </p>
+
+      <div class="preço">
+        <span class="oferta">$149.99</span>
+        <span class="normal">$169.99</span>
+      </div>
       
-      
-      <div class="coluna-1">$149.99</div>
-      <div class="coluna-2">$169.99</div>
-      
-      
-      
-      <button type="button" class="btn btn-succes">Add to Cart</button>  
-      
-    </section>   
-    
-  </article>
-  
-  
-  
-  
-  
-  
-  
-  <footer>
-    <div class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="blank">Frontend Mentor</a>. 
-      Coded by <a href="https://www.linkedin.com/in/gustavo-assis-goncalves/">Gustavo de Assis G. Reis</a>.
+      <button type="button">
+        <img src="./images/icon-cart.svg" alt="ícone carrinho">
+        Add to Cart
+      </button>
+
     </div>
-  </footer>
-  
+    
+  </div>
 </body>
 </html>

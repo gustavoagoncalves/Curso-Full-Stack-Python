@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz@9..144&family=Montserrat&display=swap');
+
 * {
     box-sizing: border-box;
 }
@@ -43,12 +45,15 @@ div img {
 
 button {
     background-color: hsl(158, 36%, 37%);
+    font-size: 14px;
+    font-weight: 700;
     border-radius: 8px;
     color: hsl(0, 0%, 100%);
     padding: 15px 20px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
+    display: flex;
+    cursor: pointer;
 }
 
 button:visited {
