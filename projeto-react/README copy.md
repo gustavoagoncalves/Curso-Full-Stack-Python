@@ -12,3 +12,11 @@
 - Também é possível executar funções em JSX
 - Inserir valores em atributos de tags também é válido em JSX
 - Podemos colocar uma estrutura lógica (if, else por exemplo)
+
+## Componentes
+- Permite dividir a aplicação em partes
+- Renderizam JSX, assim como o App.js (que é um componente)
+- Precisamos criar um arquivo de componentes
+- E importá-lo onde precisamos utilizar
+- Pode ser utilizado em vários locais
+- Normalmente ficam em uma pasta chamada components

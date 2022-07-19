@@ -44,3 +44,5 @@ Kit de ferramentas de automação de tarefas baseada em JavaScript
 - Otimização de arquivos
 - Mesclagem e minificação de CSS e JS
 - Diminuição do tamanho de imagens
+- Pipe: métodos de tratamento de dados do gulp
+- gulp-concat: responsável por unificar os arquivos
