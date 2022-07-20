@@ -20,3 +20,24 @@
 - E importá-lo onde precisamos utilizar
 - Pode ser utilizado em vários locais
 - Normalmente ficam em uma pasta chamada components
+
+## Props
+- As props são valores passados para componentes
+- Podemos deixá-los dinâmicos, ou seja, mudando a execução por causa do valor da prop
+- O valor é passado como um atributo na chamada do componente
+- Precisa ser resgatado dentro de uma propriedade/argumento chamada props na função de definição do componente
+- As props são somente de leitura
+- Dados dinâmicos também podem ser passados por props
+
+## Adicionando CSS
+- O CSS pode ser adicionado de forma global na aplicação por meio do arquivo index.css, por exemplo
+- Porém é possível estilizar a nível de componentes
+- Utilizamos o CSS modules
+- Basta criar um arquivo chamado: NomeDoComponente.module.css
+- E chamar o CSS no componente
+
+## Fragmentos
+- Os react fragments permitem a criação de um componente sem um elemento pai
+- O propósito é descomplicar os nós do DOM
+- A sintaxe é <> e </> e não há um nome para a tag
+- Criamos no próprio JSX
