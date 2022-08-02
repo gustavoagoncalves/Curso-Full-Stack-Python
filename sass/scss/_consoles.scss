@@ -1,0 +1,47 @@
+.consoles {
+    h2 {
+        color: $color-03;
+    }
+
+    ul {
+        list-style-type: none;
+        font-size: $font-small;
+        display: block;
+        height: 250px;
+        padding: 1rem 0;
+        width: 100%;
+    }
+
+    li {
+        color: $color-02;
+        display: block;
+        float: left;
+        margin: 1rem 1.5rem;
+        width: 30%;
+
+        .img-container {
+            display: block;
+            height: 200px;
+            overflow: hidden;
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        a {
+            background-color: $color-01;
+            border-radius: 5px;
+            color: white;
+            display: block;
+            font-size: $font-medium;
+            margin: $mt-02 auto $mb;
+            padding: 4px 8px;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        a:hover {
+            background-color: #030349;
+        }
+        
+    }
+}

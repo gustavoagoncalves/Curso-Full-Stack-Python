@@ -1,0 +1,22 @@
+.principal {
+    h1 {
+        font-size: $font-big
+    }
+
+    h2 {
+        color: $color-default;
+        font-size: $font-medium;
+        margin: $mb $mt;
+    }
+
+    img {
+        width: 100%;
+        border-radius: 15px;
+    }
+
+    p {
+        font-size: $font-normal;
+        width: 100%;
+
+    }
+}
