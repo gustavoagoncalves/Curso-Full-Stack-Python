@@ -88,6 +88,8 @@ footer {
   width: 100%;
 }
 .consoles li {
+  border-color: 1px solid #e90707;
+  background-color: #ddd;
   color: #999;
   display: block;
   float: left;

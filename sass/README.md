@@ -27,3 +27,6 @@
 ## Partials
 - Módularizar o código
 - Snippet: trecho de código que pode ser reutilizado em outros projetos
+
+## Mixin
+- Trechos de código de CSS que podem ser declarados e reutilizados por todo projeto

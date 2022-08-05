@@ -1,3 +1,8 @@
+@mixin theme($theme:#e90707) {
+    border-color: 1px solid $theme;
+    background-color: $bg-color;
+}
+
 .consoles {
     h2 {
         color: $color-03;
@@ -13,6 +18,7 @@
     }
 
     li {
+        @include theme;
         color: $color-02;
         display: block;
         float: left;
