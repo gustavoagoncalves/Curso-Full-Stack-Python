@@ -8,21 +8,29 @@ const image = require('gulp-imagemin')
 const htmlmin = require('gulp-htmlmin')
 const babel = require('gulp-babel')
 const browserSync = require('browser-sync').create()
+const sass = require('gulp-sass') (require('node-sass'))
 const reload = browserSync.reload
 
 function tarefasCSS(cb) {
     gulp.src([
             './node_modules/bootstrap/dist/css/bootstrap.css', 
             './vendor/owl/css/owl.css',
-            './node_modules/@fortawesome/fontawesome-free/css/fontawesome.css',
-            './src/css/style.css'
+            './node_modules/@fortawesome/fontawesome-free/css/fontawesome.css'
         ])
-        .pipe(concat('styles.css'))
-        .pipe(cssmin())
-        .pipe(rename({ suffix: '.min'})) // libs.min.css
-        .pipe(gulp.dest('./dist/css'))
+        .pipe(concat('libs.css'))             // mescla arquivos
+        .pipe(cssmin())                      // minifica o CSS
+        .pipe(rename({ suffix: '.min'}))     // libs.min.css
+        .pipe(gulp.dest('./dist/css'))      // cria arquivo em um novo diretório
     cb()
 }
+
+function tarefasSASS(cb) {
+    gulp.src('./src/scss/**/*.scss')
+        .pipe(sass())       // transforma o SASS para CSS
+        .pipe(gulp.dest('./dist/css'))
+
+    cb()
+} 
 
 function tarefasJS(callback) {
     gulp.src([
@@ -83,8 +91,9 @@ function end(cb){
     return cb()
 }
 
-const process = parallel( tarefasHTML, tarefasCSS, tarefasJS, end )
+const process = parallel( tarefasHTML, tarefasCSS, tarefasSASS, end )
 exports.styles = tarefasCSS
 exports.scripts = tarefasJS
 exports.images = tarefasImagem
+exports.sass = tarefasSASS
 exports.default = process
