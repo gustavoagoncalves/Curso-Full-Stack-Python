@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   border: 0;
   margin: 0;
@@ -20,6 +21,10 @@ footer {
   margin: 0 auto;
   width: 100%;
   padding: 4rem 0;
+}
+
+footer {
+  padding: 1.5rem 0;
 }
 
 section {
@@ -76,34 +81,55 @@ footer {
   background-color: #ddd;
 }
 
-.consoles h2 {
+.consoles {
+  /*
+      BEM CSS
+      - Block
+      - Element
+      - Modifier
+
+      - Padrão do Projeto / Design Paterns
+      Exemplo: 
+      .consoles__title
+      .consoles__list
+      .consoles__item
+      .consoles__img-container
+      .consoles__button
+  */
+  padding: 3rem 0;
+}
+.consoles__title {
   color: #f00;
 }
-.consoles ul {
+.consoles__list {
   list-style-type: none;
   font-size: 1.2rem;
-  display: block;
-  height: 250px;
+  display: flex;
+  height: auto;
+  margin: 1.5rem auto;
   padding: 1rem 0;
   width: 100%;
 }
-.consoles li {
-  border-color: 1px solid #e90707;
-  background-color: #ddd;
+.consoles__item {
   color: #999;
   display: block;
-  float: left;
-  margin: 1rem 1.5rem;
-  width: 30%;
+  margin: 1.5rem 0.75rem;
+  text-align: center;
+  width: calc(33% - 15px);
 }
-.consoles li .img-container {
+@media (max-width: 999px) {
+  .consoles__item {
+    width: calc(99% - 30px);
+  }
+}
+.consoles__img-container {
   display: block;
   height: 200px;
   overflow: hidden;
   width: 100%;
   border-radius: 10px;
 }
-.consoles li a {
+.consoles__button {
   background-color: #2f3ec7;
   border-radius: 5px;
   color: white;
@@ -114,25 +140,38 @@ footer {
   text-align: center;
   text-decoration: none;
 }
-.consoles li a:hover {
+.consoles__button a:hover {
   background-color: #030349;
 }
 
-.principal h1 {
+.principal__h1 {
   font-size: 3.5rem;
 }
-.principal h2 {
-  color: #444;
+.principal__title {
+  color: #f00;
   font-size: 2.2rem;
   margin: 1.5rem 1.5rem;
 }
-.principal img {
+.principal__item {
+  border-color: 1px solid #e90707;
+  background-color: #ddd;
+  color: #999;
+  display: flex;
+  float: left;
+  height: max-content;
+  justify-content: center;
+  align-items: baseline;
+  flex-flow: column;
+}
+.principal__image {
   width: 100%;
   border-radius: 15px;
 }
-.principal p {
+.principal__description {
   font-size: 1.5rem;
   width: 100%;
+  text-align: justify;
+  letter-spacing: 0.75px;
 }
 
 /*# sourceMappingURL=style.css.map */

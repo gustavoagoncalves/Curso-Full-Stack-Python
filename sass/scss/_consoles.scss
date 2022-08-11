@@ -1,53 +1,68 @@
-@mixin theme($theme:#e90707) {
-    border-color: 1px solid $theme;
-    background-color: $bg-color;
-}
-
 .consoles {
-    h2 {
+    /*
+        BEM CSS
+        - Block
+        - Element
+        - Modifier
+
+        - Padrão do Projeto / Design Paterns
+        Exemplo: 
+        .consoles__title
+        .consoles__list
+        .consoles__item
+        .consoles__img-container
+        .consoles__button
+    */
+
+    padding: 3rem 0;
+
+    &__title {
         color: $color-03;
     }
 
-    ul {
+    &__list {
         list-style-type: none;
         font-size: $font-small;
-        display: block;
-        height: 250px;
+        display: flex;
+        height: auto;
+        margin: $space-default auto;
         padding: 1rem 0;
         width: 100%;
     }
 
-    li {
-        @include theme;
+    &__item {
         color: $color-02;
         display: block;
-        float: left;
-        margin: 1rem 1.5rem;
-        width: 30%;
+        margin: $space-default .75rem;
+        text-align: center;
+        width: calc(99% / 3 - 15px);
 
-        .img-container {
-            display: block;
-            height: 200px;
-            overflow: hidden;
-            width: 100%;
-            border-radius: 10px;
+        @media (max-width: $tablet) {
+            width: calc(99% - 30px);
         }
+    }
 
-        a {
-            background-color: $color-01;
-            border-radius: 5px;
-            color: white;
-            display: block;
-            font-size: $font-medium;
-            margin: $mt-02 auto $mb;
-            padding: 4px 8px;
-            text-align: center;
-            text-decoration: none;
-        }
+    &__img-container {
+        display: block;
+        height: 200px;
+        overflow: hidden;
+        width: 100%;
+        border-radius: 10px;
+    }  
+
+    &__button {
+        background-color: $color-01;
+        border-radius: 5px;
+        color: white;
+        display: block;
+        font-size: $font-medium;
+        margin: $mt-02 auto $mb;
+        padding: 4px 8px;
+        text-align: center;
+        text-decoration: none;
 
         a:hover {
             background-color: #030349;
         }
-        
     }
 }

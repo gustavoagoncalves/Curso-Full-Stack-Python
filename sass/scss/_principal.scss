@@ -1,22 +1,39 @@
+@mixin theme($theme:#e90707) {
+    border-color: 1px solid $theme;
+    background-color: $bg-color;
+}
+
 .principal {
-    h1 {
+    &__h1 {
         font-size: $font-big
     }
 
-    h2 {
-        color: $color-default;
+    &__title {
+        color: $color-03;
         font-size: $font-medium;
         margin: $mb $mt;
     }
 
-    img {
+    &__item {
+        @include theme;
+        color: $color-02;
+        display: flex;
+        float: left;
+        height: max-content;
+        justify-content: center;
+        align-items: baseline;
+        flex-flow: column;
+    }
+
+    &__image {
         width: 100%;
         border-radius: 15px;
     }
 
-    p {
+    &__description {
         font-size: $font-normal;
         width: 100%;
-
+        text-align: justify;
+        letter-spacing: .75px;
     }
 }
