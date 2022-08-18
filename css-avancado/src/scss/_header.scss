@@ -11,7 +11,7 @@ header .container {
         background-position: top center;
         height: 45rem;
         display: flex;
-        padding-bottom: 4rem;
+        overflow: hidden;
         width: 100%;
 
         h1 {

@@ -3,6 +3,12 @@
     grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
 
+    @media screen and (max-width:767px) {
+        display: flex;
+        flex-direction: column;
+        gap: 2.5rem;
+    }
+
     &__item {
         background-color: rgba(250, 250, 250, .2);
         border-radius: 1rem;
