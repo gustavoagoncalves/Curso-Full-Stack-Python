@@ -23,7 +23,9 @@ class Registro {
     resumo(){
         let valorAtualizado = 0
         let tipo = ''
+        const regex = new RegExp('x', 'gi')
         this.movimentacoes.forEach(lancamento => {
+            lancamento.banco = lancamento.banco.replace(regex, 'Y')
             valorAtualizado += lancamento.saldo
             tipo += lancamento.nome + ' | '
         })
