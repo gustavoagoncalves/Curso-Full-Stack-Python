@@ -17,3 +17,22 @@
 - Frameworks
 - De fato são "funções especiais"
 - Método construtor: construtor
+
+# Manipulação de dados
+- JavaScript trabalha com tipagem dinâmica (números, textos, strings, objetos, arrays)
+- Arrays: objetos que contem múltiplos valores armazenados em uma lista
+
+## Arrays
+- filter
+- forEach
+- reduce
+- map
+
+## Export e Import
+- São recursos do ES Modules
+
+## TypeScript
+- boolean (verdadeiro ou falso)
+- string ('texto')
+- arrays
+- tuple
