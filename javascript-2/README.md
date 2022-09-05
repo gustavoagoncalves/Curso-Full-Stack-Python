@@ -36,3 +36,8 @@
 - string ('texto')
 - arrays
 - tuple
+
+## Framework
+- React
+- Vue.js
+- Angular
