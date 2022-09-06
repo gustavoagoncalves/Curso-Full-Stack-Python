@@ -3,35 +3,35 @@ let livros = [
         título: 'A Guerra dos Tronos',
         prólogo: 'Patrulheiro Will',
         publicação: 1996,
-        páginas: 704,
-        capítulos: 77
+        paginas: 704,
+        capitulos: 77
     },
     {
         título: 'A Fúria dos Reis',
         prólogo: 'Meistre Cressen',
         publicação: 1998,
-        páginas: 784,
-        capítulos: 70
+        paginas: 784,
+        capitulos: 70
     },
     {
         título: 'A Tormenta de Espadas',
         prólogo: 'Patrulheiro Chett',
         publicação: 2000,
-        páginas: 992,
-        capítulos: 82
+        paginas: 992,
+        capitulos: 82
     },
     {
         título: 'O Festim dos Corvos',
         prólogo: 'Pate',
         publicação: 2005,
-        páginas: 784,
-        capítulos: 46
+        paginas: 784,
+        capitulos: 46
     },
     {
         título: 'A Dança dos Dragões',
-        prólogo: 'Varamys Seis-Peles',
+        prólogo: 'Varamyr Seis-Peles',
         publicação: 2011,
-        páginas: 959,
-        capítulos: 73
+        paginas: 959,
+        capitulos: 73
     }
 ]
