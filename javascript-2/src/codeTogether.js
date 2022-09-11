@@ -1,4 +1,5 @@
-import livros from './livros'
+import cronicas from './livros'
+
 const express = require("express");
 const cors = require("cors");
 const app = express();
@@ -8,11 +9,11 @@ app.listen(8081, () => {
     console.log("CORS-enabled web server listening on port 8081")
 });
 
-const filteredLivros = livros.filter((livros) => {
-    return livros.capitulos >= 40
+const filteredCronicas = cronicas.filter((cronicas) => {
+    return cronicas.capitulos >= 40
 });
 
-console.log(filteredLivros);
+console.log(filteredCronicas);
 
 let toPrint = ''
 paginas.forEach(paginas => {
