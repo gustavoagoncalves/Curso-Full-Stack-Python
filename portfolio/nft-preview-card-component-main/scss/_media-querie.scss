@@ -1,0 +1,13 @@
+@media screen and (max-width: 610px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        width: 375px;
+        height: 610px;
+        border-radius: 25px;
+    }
+
+    .ethereum {
+        border-radius: 15px;
+    }
+}

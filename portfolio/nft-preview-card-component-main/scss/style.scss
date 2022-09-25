@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+$color-01: hsl(215, 51%, 70%);
+$color-02: hsl(178, 100%, 50%);
+$color-03: hsl(215, 32%, 27%);
+$color-04: hsl(0, 0%, 100%);
+$bg-color-01: hsl(217, 54%, 11%);
+$bg-color-02: hsl(216, 50%, 16%);
+$ml:25px;
+$font-family: 'Outfit', sans-serif;
+
+body,html {
+    margin: 60px auto;
+    font-family: $font-family;
+    background-color: $bg-color-01;
+    display: flex;
+}
+
+.container {
+    background-color: $bg-color-02;
+    margin: 0;
+    display: block;
+    border-radius: 25px;
+}
+
+.ethereum {
+    width: 300px;
+    height: auto;
+    margin: $ml $ml 0 $ml;
+    border-radius: 15px;
+
+    &:hover {
+        cursor: pointer;
+        opacity: 0.5;
+        background-color: $color-02;
+    }
+}
+
+h3 {
+    color: $color-04;
+    margin-left: $ml;
+
+    &:hover {
+        cursor: pointer;
+        color: $color-02;
+    }
+}
+
+p {
+    color: $color-01;
+}
+
+.description {
+    margin-left: $ml;
+}
+
+.images {
+    margin-left: $ml;
+    #clock {
+        padding-left: 120px;
+    }
+
+    .first-span {
+        color: $color-02;
+    }
+    
+    .second-span {
+        color: $color-01;
+    }
+}
+
+.footer {
+    margin-left: $ml;
+    display: flex;
+    padding: 25px 0 15px 0;
+    .jules {
+        width: 35px;
+        height: 35px;
+        border: 1px solid $color-04;
+        border-radius: 20px;
+        margin-top: 10px;
+    }
+
+    .footer-description {
+        padding-left: $ml;
+    }
+
+    .creator {
+        color: $color-04;
+
+        &:hover {
+            cursor:pointer;
+            color: $color-02;
+        }
+    }
+}
+
+@import 'media-querie';
