@@ -13,3 +13,15 @@
 - Scrum: método de trabalho realizado a partir de pequenos ciclos de atividades dentro de um projeto
 - XP (eXtreme Programming): tem como objetivo criar sistemas com alta qualidade, com base em uma interação próxima com os clientes, testagem constante e ciclos de desenvolvimento curtos. Se ajusta bem a projetos de software com requisitos vagos e em constante mudança
 - Kanban: propõe o uso de cartões (post-its) para indicar e acompanhar o andamento da produção dentro da indústria. Trata-se de um sistema visual que busca gerenciar o trabalho conforme ele se move pelo processo
+
+# FTP (File Transfer Protocol)
+- É um um tipo de conexão que permite a troca de arquivos entre dois computadores conectados à internet
+
+# SSH (Secure Socket Shell)
+- Protocolo padrão de acesso do Linux
+- Operação de serviços de rede de forma segura sobre uma rede insegura
+- Criptografado por padrão
+- Não consome muitos recurso
+- Envia apenas as saídas do comando
+- Já vem instalado na maioria das distribuições Linux
+- Server já vem instalado
