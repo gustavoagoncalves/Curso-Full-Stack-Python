@@ -5,21 +5,25 @@ $color-03: hsl(215, 32%, 27%);
 $color-04: hsl(0, 0%, 100%);
 $bg-color-01: hsl(217, 54%, 11%);
 $bg-color-02: hsl(216, 50%, 16%);
-$ml:25px;
+$ml:1.5625rem;
 $font-family: 'Outfit', sans-serif;
 
 body,html {
-    margin: 60px auto;
+    margin: 3.75rem auto;
     font-family: $font-family;
     background-color: $bg-color-01;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
 }
 
 .container {
     background-color: $bg-color-02;
     margin: 0;
     display: block;
-    border-radius: 25px;
+    border-radius: 1.5625rem;
 }
 
 .ethereum {
@@ -56,7 +60,7 @@ p {
 .images {
     margin-left: $ml;
     #clock {
-        padding-left: 120px;
+        padding-left: 7.5rem;
     }
 
     .first-span {
@@ -71,13 +75,13 @@ p {
 .footer {
     margin-left: $ml;
     display: flex;
-    padding: 25px 0 15px 0;
+    padding: 1.5625rem 0 0.9375rem 0;
     .jules {
-        width: 35px;
-        height: 35px;
-        border: 1px solid $color-04;
-        border-radius: 20px;
-        margin-top: 10px;
+        width: 2.1875rem;
+        height: 2.1875rem;
+        border: 0.0625rem solid $color-04;
+        border-radius: 1.25rem;
+        margin-top: 0.625rem;
     }
 
     .footer-description {
