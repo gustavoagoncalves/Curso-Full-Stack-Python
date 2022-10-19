@@ -55,7 +55,8 @@ h1 {
 }
 
 h2 {
-    color: hsla(0, 0%, 100%, 0.6);
+    color: hsl(0, 0%, 100%);
+    font-family: 'Lexend Deca', sans-serif;
 }
 
 p {
@@ -69,7 +70,7 @@ span {
 }
 
 .secondary {
-    color: hsl(0, 0%, 100%);
+    color: hsla(0, 0%, 100%, 0.75);
 }
 
 .container {
@@ -116,4 +117,9 @@ picture {
 
 .attribution {
     display: flex;
+}
+
+img {
+    mix-blend-mode: multiply;
+    opacity: 0.8;
 }
