@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("../images/pattern-background-desktop.svg");
+    font-family: 'Red Hat Display', sans-serif;
+    min-height: 120vh;
+    display: grid;
+    place-content: center;
+}
+
+h1 {
+    text-align: center;
+    color: hsl(223, 47%, 23%);
+}
+
+p {
+    font-size: 16px;
+    color: hsl(224, 23%, 55%);
+    width: 100%;
+    text-align: center;
+    padding-top: 20px;
+}
+
+span {
+    text-decoration: underline;
+    color: hsl(245, 75%, 52%);
+    font-size: 13px;
+    font-weight: 700;
+    padding-top: 10px;
+    cursor: pointer;
+}
+
+span:hover {
+    text-decoration: none;
+    color: hsl(224, 23%, 55%);
+}
+
+button {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    background-color: hsl(225, 100%, 98%);
+}
+
+.hero {
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+
+.description {
+    display: grid;
+    align-items: center;
+    margin: 35px auto 35px auto;
+}
+
+.plan {
+    display: flex;
+    justify-content: flex-start;
+    margin: 35px 0 45px 0;
+}
+
+.note {
+    padding-left: 73px;
+}
+
+ul {
+    list-style: none;
+    display: grid;
+    padding: 0 94px 0 8px;
+    font-size: 14px;
+}
+
+.bold {
+    font-weight: 900;
+}
+
+.bold-2 {
+    font-weight: 500;
+    color: hsl(224, 23%, 55%);
+}
+
+.button {
+    display: grid;
+}
+
+.button-1 {
+    margin: 5px 25px 25px 25px;
+    color: hsl(225, 100%, 98%);
+    padding: 15px;
+    background-color: hsl(245, 75%, 52%);
+    font-weight: 900;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+}
+
+.button-1:hover {
+    background-color: hsl(245, 75%, 52%);
+    opacity: 0.5;
+}
+
+.button-2 {
+    margin: 0 25px 25px 25px;
+    color: hsl(224, 23%, 55%);
+    padding: 15px;
+    background-color: hsl(225, 100%, 98%);
+    font-weight: 900;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+}
+
+.button-2:hover {
+    color: hsl(223, 47%, 23%);
+}
+
+@media screen and (max-width: 610px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 100vh;
+    }
+
+    .container {
+        width: 375px;
+    }
+
+    .hero {
+        width: 375px;
+    }
+
+    .note {
+        padding-left: 45px;
+    }
+}
