@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  font-family: "Karla", sans-serif;
+  background-color: hsl(204deg, 43%, 93%);
+  min-height: 100vh;
+  padding-top: 40px;
+  display: flex;
+  place-content: center;
+}
+
+header {
+  background-color: white;
+  display: grid;
+  width: 650px;
+  height: 200px;
+  padding: 35px;
+  border-radius: 8px 8px 0 0;
+}
+header h2 {
+  color: hsl(179deg, 62%, 43%);
+  padding-bottom: 15px;
+}
+header h4 {
+  color: hsl(71deg, 73%, 54%);
+}
+header p {
+  color: hsl(218deg, 22%, 67%);
+  font-size: 16px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  width: 650px;
+  height: 300px;
+}
+.container h3 {
+  color: hsl(204deg, 43%, 93%);
+}
+.container .subscription {
+  background-color: hsl(179deg, 62%, 43%);
+  display: grid;
+  width: 325px;
+  padding: 48px;
+  border-radius: 0 0 0 8px;
+}
+.container .subscription p {
+  color: hsl(204deg, 43%, 93%);
+  font-size: 15px;
+}
+.container .subscription button {
+  background-color: hsl(71deg, 73%, 54%);
+  border: none;
+  border-radius: 8px;
+  color: hsl(204deg, 43%, 93%);
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 9px;
+  width: 229px;
+}
+.container .subscription button:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+.container .why-us {
+  background-color: hsl(179deg, 62%, 43%);
+  display: grid;
+  opacity: 0.7;
+  width: 325px;
+  padding: 48px;
+  border-radius: 0 0 8px 0;
+}
+.container .why-us ul {
+  list-style: none;
+  color: hsl(204deg, 43%, 93%);
+  font-weight: 400;
+  display: grid;
+  gap: 2px;
+}
+
+span {
+  font-weight: 700;
+  font-size: 32px;
+  color: hsl(204deg, 43%, 93%);
+}
+
+@media screen and (max-width: 610px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    max-width: 375px;
+  }
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 10px;
+    width: 325px;
+    height: 230px;
+  }
+  .container {
+    display: grid;
+    width: 100%;
+  }
+  .container .subscription {
+    display: grid;
+    grid-gap: 15px;
+    border-radius: 0;
+  }
+  button {
+    padding: 15px;
+  }
+  .why-us {
+    border-radius: 0 0 8px 8px !important;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

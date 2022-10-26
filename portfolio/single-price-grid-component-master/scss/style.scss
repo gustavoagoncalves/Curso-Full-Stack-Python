@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+$color-01: hsl(179, 62%, 43%);
+$color-02: hsl(71, 73%, 54%);
+$color-03: hsl(204, 43%, 93%);
+$color-04: hsl(218, 22%, 67%);
+$font-family: 'Karla', sans-serif;
+$font-size: 16px;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: $font-family;
+    background-color: $color-03;
+    min-height: 100vh;
+    padding-top: 40px;
+    display: flex;
+    place-content: center;
+}
+
+header {
+    background-color: white;
+    display: grid;
+    width: 650px;
+    height: 200px;
+    padding: 35px;
+    border-radius: 8px 8px 0 0;
+
+    h2 {
+        color: $color-01;
+        padding-bottom: 15px;
+    }
+
+    h4 {
+        color: $color-02;
+    }
+
+    p {
+        color: $color-04;
+        font-size: 16px;
+    }
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    width: 650px;
+    height: 300px;
+
+    h3 {
+        color: $color-03;
+    }
+
+    .subscription {
+        background-color: $color-01;
+        display: grid;
+        width: 325px;
+        padding: 48px;
+        border-radius: 0 0 0 8px;
+
+        p {
+            color: $color-03;
+            font-size: 15px;
+        }
+
+        button {
+            background-color: $color-02;
+            border: none;
+            border-radius: 8px;
+            color: $color-03;
+            font-size: 16px;
+            font-weight: 700;
+            margin-top: 9px;
+            width: 229px;
+
+            &:hover {
+                cursor: pointer;
+                opacity: 0.8;
+            }
+        }
+    }
+
+    .why-us {
+        background-color: $color-01;
+        display: grid;
+        opacity: 0.7;
+        width: 325px;
+        padding: 48px;
+        border-radius: 0 0 8px 0;
+
+        ul {
+            list-style: none;
+            color: $color-03;
+            font-weight: 400;
+            display: grid;
+            gap: 2px;
+        }
+    }
+}
+
+span {
+    font-weight: 700;
+    font-size: 32px;
+    color: $color-03;
+}
+
+@import 'media-querie';
