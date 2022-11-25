@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+h1 {
+    color: hsl(238, 29%, 16%);
+    font-weight: 700;
+}
+
+.card {
+    border: none;
+    cursor: pointer;
+}
+
+.card-body {
+    color: hsl(240, 6%, 50%);
+}
