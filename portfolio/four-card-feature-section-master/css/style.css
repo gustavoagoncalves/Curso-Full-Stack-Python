@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+h3 {
+    color: hsl(234, 12%, 34%);
+    font-weight: 600;
+    margin-left: 20px;
+}
+
+p {
+    color: hsl(229, 6%, 66%)
+}
+
+#header {
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+    gap: 35px;
+}
+
+#header h1 {
+    font-weight: 200;
+    color: hsl(234, 12%, 34%);
+}
+
+#header strong {
+    font-weight: 600;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+#card {
+    display: flex;
+    align-content: center;
+    border-radius: 8px;
+    width: 300px;
+    margin-right: auto;
+    margin-left: auto;
+    flex-direction: column;
+    padding-top: 15px;
+    gap: 10px;
+    margin-bottom: 20px;
+    height: 244px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.supervisor p,
+.builder p,
+.karma p,
+.calculator p {
+    margin-left: 20px;
+    font-size: 15px;
+}
+
+.supervisor img,
+.builder img,
+.karma img,
+.calculator img {
+    width: fit-content;
+    position: relative;
+    left: 205px;
+    top: 39px;
+}
+
+.supervisor {
+    border-top: 4px solid hsl(212, 86%, 64%) !important;
+}
+
+.builder {
+    border-top: 4px solid hsl(0, 78%, 62%) !important;
+}
+
+.karma {
+    border-top: 4px solid hsl(34, 97%, 64%) !important;
+}
+
+.calculator {
+    border-top: 4px solid hsl(180, 62%, 55%) !important;
+
+}
