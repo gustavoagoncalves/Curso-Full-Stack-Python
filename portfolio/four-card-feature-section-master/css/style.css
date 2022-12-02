@@ -87,3 +87,31 @@ p {
     border-top: 4px solid hsl(180, 62%, 55%) !important;
 
 }
+
+@media screen and (min-width: 600px) {
+    #header {
+        text-align: center;
+    }
+
+    .supervisor {
+        position: relative;
+        right: 337px;
+        top: 190px;
+    }
+
+    .builder {
+        position: relative;
+        bottom: 260px;
+    }
+
+    .karma {
+        position: relative;
+        bottom: 236px;
+    }
+
+    .calculator {
+        position: relative;
+        bottom: 602px;
+        left: 346px;
+    }
+}
