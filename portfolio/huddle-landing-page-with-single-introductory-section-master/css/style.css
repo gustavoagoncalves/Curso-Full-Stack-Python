@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@200;400;600&display=swap');
 
-/*
-    LEMBRAR DE CONVERTER OS VALORES DE PX PARA REM!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-*/
-
 * {
     margin: 0;
     padding: 0;
@@ -27,7 +23,7 @@ main {
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 2.5rem;
 }
 
 .huddle {
@@ -38,24 +34,24 @@ main {
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
     color: #fff;
-    margin-top: 60px;
+    margin-top: 3.75rem;
 }
 
 .header p {
     font-family: 'Open Sans', sans-serif;
     color: #fff;
     font-weight: 400;
-    padding-top: 15px;
+    padding-top: 0.9375rem;
 }
 
 .btn {
     background-color: #fff;
     color: hsl(257, 40%, 49%);
-    padding: 10px;
-    width: 208px;
-    border-radius: 25px;
+    padding: 0.625rem;
+    width: 13rem;
+    border-radius: 1.5625rem;
     border: none;
-    margin: 15px 15px 15px 34px;
+    margin: 0.9375rem 0.9375rem 0.9375rem 2.125rem;
 }
 
 .btn:hover {
@@ -64,14 +60,14 @@ main {
 }
 
 .logos {
-    margin-top: 50px;
-    margin-bottom: 35px;
+    margin-top: 3.125rem;
+    margin-bottom: 2.1875rem;
     display: flex;
-    gap: 20px;
+    gap: 1.25rem;
 }
 
 i {
-    font-size: 25px;
+    font-size: 1.5625rem;
     cursor: pointer;
     color: #fff;
 }
@@ -79,41 +75,41 @@ i {
 #facebook,
 #twitter,
 #instagram {
-    border: 1px solid #fff;
-    padding: 15px;
+    border: 0.0625rem solid #fff;
+    padding: 0.9375rem;
     border-radius: 50%;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 37.5rem) {
     main {
         flex-direction: row;
-        gap: 15px;
+        gap: 0.9375rem;
     }
 
     .header {
-        margin: 25px;
+        margin: 1.5625rem;
     }
 
     .huddle {
-        width: 200px;
+        width: 12.5rem;
     }
 
     .mockup {
-        width: 600px;
+        width: 37.5rem;
     }
 
     .btn {
         position: relative;
-        right: 30px;
+        right: 1.875rem;
     }
 
     .logos {
         position: relative;
-        top: 260px;
-        right: 200px;
+        top: 16.25rem;
+        right: 12.5rem;
     }
 
     i {
-        font-size: 15px;
+        font-size: 0.9375rem;
     }
 }
